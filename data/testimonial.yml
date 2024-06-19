@@ -1,0 +1,54 @@
+enable  : true
+title   : "Learn the fundamental of Data Science"
+subtitle: "Almost each quarter there is release of a new ds or mlops tool. But you just need to know only few of them to get into the data science."
+testimonial_item :
+  - thumb : "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+    name  : "Python"
+    company_position: "CDO, Bulmuci"
+    quote : > 
+            "Trust us we looked for a very long time and wasted thousands of dollars testing other teams, freelancers, and outsource companies." 
+
+  - thumb : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/2560px-Pandas_logo.svg.png"
+    name  : "Pandas"
+    company_position: "CDO, Bulmuci"
+    quote : > 
+            "Roxo products have allowed us to deliver better support to all our clients. The agility with which we can implement new features and workflows is a key element." 
+
+  - thumb : "https://wwwsitecorecom.azureedge.net/-/media/sitecoresite/images/home/products/marketplace/sitecore-cdp-integration-for-amazon-sagemaker/amazon_sagemaker-min.png?md=20220523T181222Z"
+    name  : "AWS Sagemaker"
+    company_position: "MD, Udilamo"
+    quote : > 
+            "We’re a really busy restaurant, and roxo gives our customers a easy way to order, pay, and pick up their food so they can beat the line and beat that lunch rush." 
+
+  - thumb : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png"
+    name  : "PySpark"
+    company_position: "PM, Walmet"
+    quote : > 
+            "Trust us we looked for a very long time and wasted thousands of dollars testing other teams, freelancers, and outsource companies." 
+
+  - thumb : "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383166i515543186C35738D?v=v2"
+    name  : "MLFlow"
+    company_position: "CEO, Axion"
+    quote : > 
+            "Roxo products have allowed us to deliver better support to all our clients. The agility with which we can implement new features and workflows is a key element." 
+
+  - thumb : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png"
+    name  : "AWS"
+    company_position: "PDO, Komoyo"
+    quote : > 
+            "We’re a really busy restaurant, and roxo gives our customers a easy way to order, pay, and pick up their food so they can beat the line and beat that lunch rush." 
+  - thumb : "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+    name  : "SQL"
+    company_position: "PDO, Komoyo"
+    quote : 
+  
+  - thumb : "https://upload.wikimedia.org/wikipedia/commons/9/96/Pytorch_logo.png"
+    name  : "PyTorch"
+    company_position: "PDO, Komoyo"
+    quote : 
+
+  - thumb : "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/2560px-Scikit_learn_logo_small.svg.png"
+    name  : "Scikit-Learn"
+    company_position: "PDO, Komoyo"
+    quote : 
+

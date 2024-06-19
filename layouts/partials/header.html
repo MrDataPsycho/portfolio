@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg site-navigation">
+    <div class="container">
+      <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+        <h4>MrDataPsycho</h4>
+      </a>
+      <button
+        class="navbar-toggler collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#sitenavbar"
+      >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="sitenavbar">
+        <ul class="navbar-nav ml-auto main-nav">
+          {{$menu := (.Site.Menus.nav)}} 
+          {{$len := (len $menu)}} 
+          {{ range $index, $element := $menu }} 
+            {{ if eq (add $index 1) $len }}
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-sm btn-primary btn-sm-rounded mr-2 mb-2"
+                style="background-color: rgb(132, 208, 233)"
+                href="{{ .URL | absURL }}"
+              >
+                <span class="">
+                  <span data-text="{{ .Name }}">
+                    {{ .Name }}
+                  </span>
+                </span>
+              </a>
+            </li>
+            {{ else }}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ .URL | absURL }}"
+                >{{ .Name }}</a
+              >
+            </li>
+            {{ end }} 
+          {{ end }}
+          <div class="search-icon">
+            <ion-icon class="btn-open" name="search-sharp"></ion-icon>
+           </div>
+        </ul>
+
+
+        <section class=" modal hidden">
+          <div class="inner-modal">
+            <div class="modal-icon">
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
+            
+            <input type="text"  id="search-query"  class="search__text" autocomplete="off" placeholder="Type to search...">
+          
+          </div> 
+          
+        
+          <div id="search-results" style="display:none;"></div>
+          <div id="sidebars"> </div> 
+
+        </section>
+        
+        <div class="overlay hidden"></div>
+
+
+
+      </div>
+    </div>
+  </nav>
+  

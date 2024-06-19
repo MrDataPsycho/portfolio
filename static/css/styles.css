@@ -1,0 +1,168 @@
+.search-icon{
+    font-size: 21px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+  }
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    position: absolute;
+    max-height: fit-content;
+    z-index: 2;
+    top: 80%;
+    left: 25%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .modal .inner-modal {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  
+  .modal-icon{
+    size: 80px;
+    display: flex;
+    align-items: center;
+    color:black;
+    font-weight: bolder;
+    padding-right: 5px;
+  }
+  
+  .modal input {
+    border: none;
+    outline: none;
+    font-size: 23px;
+    width: 100%;
+   
+  
+  }
+  .search__text::placeholder{
+    color: black;
+    font-weight: 500;
+  }
+
+    
+  .hidden {
+    display: none;
+  }
+  
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    z-index: 1;
+  }
+
+
+  
+  
+  @media (max-width:1024px) {
+  
+    .modal{
+      width: 90%;
+      position: absolute;
+      top: 30px;
+      left: 5%;
+      
+    }
+    .modal input{
+      font-size: 20px;
+    }
+    .search-icon{
+      font-size: 21px;
+      font-weight: 800px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 8px;
+    }
+  
+  
+  }
+
+
+  #search-results{
+    height: 50vh;
+    overflow-y: scroll;
+   
+    
+  }
+  
+  #search-summary{
+     display: flex;
+    align-items: center;
+    padding: 20px;
+    color:red;
+    border-top: 1px solid rgb(236, 233, 233);
+  }
+
+
+
+  #search-results .post-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+  
+   
+  }
+  
+ 
+  @media (max-width: 1024px) {
+  
+    #search-results{
+    
+        overflow-y: scroll;
+      
+    }
+  
+    #search-results .post-title{
+      font-size: 0.8rem;
+      font-weight: bold;
+    
+     
+    }
+    
+    .search-summary{
+    
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-items: center;
+      padding: 10px;
+      font-weight: 50px;
+      border-top: 1px solid gray;  
+    
+    }
+  
+    .search-summary .post-title{
+      font-size: 10px;
+      font-weight: 0.2rem;
+    }
+    
+
+  
+  }
+
+
+  mark{
+    background: beige;
+    color: black;
+}

@@ -1,0 +1,32 @@
+<head>
+    <meta charset="utf-8" />
+    <title>{{ .Title }}</title>
+  
+    {{ "<!-- mobile responsive meta -->" | safeHTML }}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    {{ with .Site.Params.author }}
+    <meta name="author" content="{{ . }}">
+    {{ end }}
+    {{ hugo.Generator }}
+  
+    {{ "<!-- Bootstrap -->" | safeHTML }}
+    {{ $bootstrap := resources.Get "css/bootstrap.css" | minify }}
+    <link rel="stylesheet" href="{{ $bootstrap.Permalink }}" />
+    {{ "<!-- font-awesome -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "font-awesome/css/font-awesome.min.css" | absURL }}" />
+    {{ "<!-- Main Stylesheets -->" | safeHTML }}
+    {{ $style := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
+    <link href="{{ $style.Permalink }}" rel="stylesheet" />
+    <link href="{{ "css/styles.css"   | absURL }}" rel="stylesheet" />
+  
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{{ "images/favicon.png" | absURL }}" type="image/x-icon" />
+    <link rel="icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon" />
+  </head>
+
+  <script type="module" src="{{ "js/common.js"   | absURL }} "></script>
+  <script type="module" src="{{ "js/search.js"   | absURL }} "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

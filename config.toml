@@ -1,0 +1,159 @@
+baseURL       = "/"
+languageCode  = "en-us"
+title         = "MrDataPsycho | Data Scientist"
+theme         = "roxo"
+summarylength = 25
+
+
+
+#homeProduct that will be displayed 
+  [params.homeProduct]
+    status  = true
+    intro  =  "This is a unique way to learn PySpark if you already  know Pandas"
+    bookdetail    = "This book covers fundamental of PySpark and good coding practices when writting PySpark code. It has many hands on coding recipes and coding challenges to quickly get you up an running with PySpark."
+    buyurl    = "https://leanpub.com/pandas-to-pyspark"
+    sampleurl =  "https://leanpub.com/pandas-to-pyspark"
+
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[params.shareButtons]
+  size = "small"
+  networks = [ "twitter" , "linkedin"]
+
+
+# Site Menus
+[menu]
+  # Navbar Menus
+  [[menu.nav]]
+    name    = "Home"
+    url     = ""
+    weight  = 1
+  [[menu.nav]]
+    name    = "About"
+    url     = "about"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Projects"
+    url     = "project"
+    weight  = 3
+  [[menu.nav]]
+    name    = "Blog"
+    url     = "blog"
+    weight  = 4
+
+  [[menu.nav]]
+    name    = "Product"
+    url     = "/products"
+    weight  = 5
+
+  [[menu.nav]]
+    name    = "Get in touch"
+    url     = "contact"
+    weight  = 7
+
+  [[menu.nav]]
+    name    = "Events"
+    url     = "/events"
+    weight  = 6
+
+# Site Params
+[params]
+  logo = "images/logo.png"
+  dateFormat = "26 FEB 1994"
+  # Meta data
+  description = "Data Science | Analytics"
+  author = "EditedByDataPsycho"
+  # Google Analitycs
+  googleAnalitycsID = "Your ID"
+  # We're using formspree.io for form handling, paste your formspree url below
+  googleForm  = "https://docs.google.com/forms/d/e/1FAIpQLScHeFdNbirzBujhlXj5c4GKlFjn2U9bUH_UDj3KSaDbpmZFNA/formResponse"
+
+  # Contact Form
+  [params.contactForm]
+    placeholder_name        = "Name"
+    placeholder_email             = "Email"
+    placeholder_subject     = "Subject"
+    placeholder_message = "Message"
+    send_message                  = "Send Message"
+
+    [[params.contactForm.projectType]]
+      value = "gd"
+      title  = "Graphics Design"
+    [[params.contactForm.projectType]]
+      value = "wd"
+      title  = "Web Design"
+  
+  # Navbar Action Button
+  [params.navAction]
+    status  = true
+    name    = "Get in touch"
+    url     = "contact"
+
+  
+  
+
+  # Banner Section
+  [params.banner]
+    enable                = true
+    background_image      = "images/backgrounds/hero-bg3.jpg"
+    heading               = "Simplify Your Data Science Learning Path "
+    # Simplify Your Data Science Learning Path
+    tagline               = ""
+    tagline2              = "Learning Data science can be over overwhelming with the traditional courses. With my half decades of hands on experience, I will teach you the current best practices and frameworks you should be focusing on learning Industrial Data Science."
+    primary_button        = "View Products"
+    primary_button_url    = "products"
+    secondary_button      = "Contact Me"
+    secondary_button_url  = "contact"
+
+#  [params.portfolio]
+#    enable    = true
+#    title     = "Projects"
+#    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
+
+  [params.call_to_action]
+    enable              = true
+    background_image    = "images/backgrounds/cta-background.jpg"
+    title               = "LET’S WORK TOGETHER"
+    primary_button      = "Contact Me"
+    primary_button_url  = "contact"
+    secondary_button    = "Articles"
+    secondary_button_url = "blog"
+
+  [params.footer]
+    # Footer Contact Info
+    [params.footer.contactInfo]
+      title   = "Contact Info"
+      address = "713 Elmwood St.<br>Prior Lake, MN 55372"
+      phone   = "409-896-1444"
+      email   = "info@roxo.co"
+      # Footer Sitemap
+      [params.footer.sitemap]
+        title   = "Sitemap"
+        [[params.footer.sitemap.link]]
+          name = "About Company"
+          url  = "about"
+        [[params.footer.sitemap.link]]
+          name = "Projects"
+          url  = "portfolio"
+        [[params.footer.sitemap.link]]
+          name = "Blog"
+          url  = "blog"
+        [[params.footer.sitemap.link]]
+          name = "Contact"
+          url  = "contact"
+      # Footer Social Media
+      [params.footer.social]
+        title   = "Social Media"
+        [[params.footer.social.link]]
+          name = "Linkedin"
+          url  = "https://www.linkedin.com/in/mr-data-psycho/"
+        [[params.footer.social.link]]
+          name = "Twitter"
+          url  = "https://twitter.com/MrDataPsycho"
+        
+      # Footer Service
+      [params.footer.service]
+        title       = "We help brands:"
+        description = "develop design solutions<br>produce valuable cultural content<br>create fresh brand experience"

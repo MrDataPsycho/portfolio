@@ -1,0 +1,48 @@
+{{ define "main" }}
+<section class="site-contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <h1 class="site-contact-title">
+          {{ .Params.heading | safeHTML }}
+        </h1>
+      </div>
+      <div class="col-lg-6 ml-auto">
+        <div class="site-contact-form">
+          <h4>{{ .Params.form_heading }}</h4>
+          <form id="contact-form" action="{{ .Site.Params.googleForm }}" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <input type="text" class="form-control" name="entry.1254546930" id="name" placeholder="{{ .Site.Params.contactForm.placeholder_name }}" required>
+              </div>
+              <div class="col-lg-12">
+                <input type="email" class="form-control" name="entry.1237308227" id="email" placeholder="{{ .Site.Params.contactForm.placeholder_email }}" required>
+              </div>
+             
+              <div class="col-lg-12">
+                <input type="text" class="form-control" name="entry.1619743863" id="subject" placeholder="{{ .Site.Params.contactForm.placeholder_subject }}" required>
+              </div>
+
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" id="message" name="entry.1236894325" rows="6" placeholder="{{ .Site.Params.contactForm.placeholder_message }}"></textarea>
+              </div>
+              <div class="col-12">
+                <button formtarget="_blank" type="submit" class="btn btn-primary" id="contact-form-button">
+                  <span class="btn-area">
+                    <span data-text="{{ .Site.Params.contactForm.send_message }}">
+                      {{ .Site.Params.contactForm.send_message }}
+                    </span>
+                  </span>
+                </button>
+              </div>
+              <p id="contact-form-status"></p>
+            </div>
+          </form>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
