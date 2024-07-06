@@ -1,11 +1,12 @@
 .site-hero{
   position: relative;
-  height: 100vh;
+  height: 95vh;
   background-size: cover;
   background-position: center center;
   display: flex;
   align-items: center;
   justify-content: center;
+
   @include desktop{
     height: auto;
     padding: 200px 0;
@@ -15,6 +16,7 @@
   }
   &-content{
     h1{
+      color: #228fe1 !important;
       margin-bottom: 75px;
       @include desktop-lg{
         font-size: 50px;

@@ -2,7 +2,7 @@
   &-blog{
     @extend .site-project;
     @include mobile{
-      padding: 70px 0;
+      padding: 70px 0;  
     }
     &.details{
       padding: 150px 0 80px;

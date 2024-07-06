@@ -112,6 +112,9 @@ summarylength = 25
 #    title     = "Projects"
 #    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
 
+  [params.blogproduct]
+    enable    = true
+
   [params.call_to_action]
     enable              = true
     background_image    = "images/backgrounds/cta-background.jpg"
