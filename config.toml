@@ -97,7 +97,7 @@ summarylength = 25
   # Banner Section
   [params.banner]
     enable                = true
-    background_image      = "images/backgrounds/hero-bg3.jpg"
+    background_image      = "images/backgrounds/bg3.png"
     heading               = "Simplify Your Data Science Learning Path "
     # Simplify Your Data Science Learning Path
     tagline               = ""

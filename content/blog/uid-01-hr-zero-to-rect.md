@@ -16,6 +16,15 @@ TL;DR: This book is no good and I feel like scammed. For me it was complete wast
 This is start section.
 
 
-# Some Other image:
+## Some Other image:
 
 ![My Blog](/images/blog/sagemaker-pipeline.png)
+
+Some code:
+```python
+import numpy as np
+import pandas as pd
+
+def my_func():
+    print("Hello")
+```
