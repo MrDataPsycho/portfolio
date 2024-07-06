@@ -1,0 +1,31 @@
+{{ with .Site.Params.blogproduct }}
+  {{ if .enable }}
+  <section class="site-project" id="project">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <div class="section-title">
+              <h4>Explore our products</h4>
+              
+            </div>
+          </div>
+        {{ range first 4 (where $.Site.RegularPages "Type" "products") }}
+        <div class="col-lg-4 col-md-10 mx-auto">
+          <div class="site-project-item">
+            <div class="site-project-item-thumb">
+              <img src="{{ .Params.Image | absURL }}" style="height: 20rem; width: 20rem;" alt="project-thumb">
+            </div>
+            <div class="site-project-item-content">
+              
+              <h3>{{ .Title }}</h3>
+              <a href="{{ .Permalink }}" class="read-more">view product</a>
+            </div>
+          </div>
+        </div> 
+        {{ end }}
+       
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
