@@ -1,11 +1,13 @@
 {{ with .Site.Params.banner }}
   {{ if .enable }}
   {{ "<!-- Site Hero Start -->" | safeHTML }}
-  <section class="site-hero" style="background-image: url('{{ .background_image }}');">
-    <div class="container">
+  <div class="hero-cover">
+  <section class="site-hero" >
+    <div class="hero-bg" style="background-image: url('{{ .background_image }}');"></div>
+    <div class="container " >
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <div class="site-hero-content text-center ">
+          <div class="site-hero-content text-center " >
             <h6>{{ .tagline }}</h6>  
             <h6>{{ .tagline2 }}</h6>
             <h1>
@@ -39,6 +41,7 @@
       <img src="{{ "images/arrow-down.svg" | absURL }}" alt="arrow-down">
     </a>
   </section>
+  </div>
   {{ "<!-- Site Hero End -->" | safeHTML }}
   {{ end }}
 {{ end }}
