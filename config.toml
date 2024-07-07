@@ -3,16 +3,28 @@ languageCode  = "en-us"
 title         = "MrDataPsycho | Data Scientist"
 theme         = "roxo"
 summarylength = 25
-
+  
 
 
 #homeProduct that will be displayed 
   [params.homeProduct]
     status  = true
-    intro  =  "This is a unique way to learn PySpark if you already  know Pandas"
-    bookdetail    = "This book covers fundamental of PySpark and good coding practices when writting PySpark code. It has many hands on coding recipes and coding challenges to quickly get you up an running with PySpark."
-    buyurl    = "https://leanpub.com/pandas-to-pyspark"
-    sampleurl =  "https://leanpub.com/pandas-to-pyspark"
+  #  [[params.homeProduct.product]]    
+   #     intro  =  "new home products"
+  #      bookdetail    = "new product detail"
+  #      buyurl    = "https://leanpub.com/pandas-to-pyspark"
+  #      sampleurl =  "https://leanpub.com/pandas-to-pyspark"
+   #     imgurl = "images/products/pyspark.png"
+  #      weight = 1
+  #      enable = true
+    
+    [[params.homeProduct.product]]
+        intro  =  "This is a unique way to learn PySpark if you already  know Pandas"
+        bookdetail    = "This book covers fundamental of PySpark and good coding practices when writting PySpark code. It has many hands on coding recipes and coding challenges to quickly get you up an running with PySpark."
+        imgurl = "images/products/pyspark.png"
+        buyurl    = "https://leanpub.com/pandas-to-pyspark"
+        sampleurl =  "https://leanpub.com/pandas-to-pyspark"
+        enable = true
 
 
 [outputs]
