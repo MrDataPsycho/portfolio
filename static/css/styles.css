@@ -1,7 +1,6 @@
 
 
-code,
-blockquote {
+code {
   display: inline-block;
   max-width: 100%;
   position: relative;
