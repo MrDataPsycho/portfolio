@@ -2,7 +2,11 @@
 
 {{ "<!-- Site Hero Start -->" | safeHTML }}
 
-<div class="container">
+
+{{ range .product}}
+
+{{ if .enable}}
+<div class="container" style="padding-bottom: 10px;">
 
     <div class="row featurette">
         <div class="col-md-7 order-md-1 my-auto">
@@ -14,11 +18,13 @@
 
         </div>
         <div class="col-md-5 order-md-2 my-auto mx-auto">
-          <img class="featurette-image img-fluid mx-auto my-auto h-100vh " data-src="holder.js/500x500/auto" alt="500x500" src="{{ .Site.BaseURL }}/images/products/pyspark.png" data-holder-rendered="true" style="width: 60%; object-fit: contain;">
+          <img class="featurette-image img-fluid mx-auto my-auto h-100vh " data-src="holder.js/500x500/auto" alt="500x500" src="{{ .Site.BaseURL }}/{{.imgurl}}" data-holder-rendered="true" style="width: 60%; object-fit: contain;">
         </div>
       </div>
 
 </div>
+{{end}}
 
+{{end}}
 {{ "<!-- Site Hero End -->" | safeHTML }}
 {{ end }}

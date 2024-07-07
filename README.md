@@ -92,15 +92,28 @@ images for event are stored under static/images/events
 
 
 
-
+  
 to change the book product at the home to a new product :
 
 go tot he root of the folder and click on config.toml
 
 edit the params.homePoduct parameters to change the product on homepage
+  
+  you can add new homepage product by adding this under the param s.homeProduct :
+    [[params.homeProduct.product]]
+        intro  =  "This is a unique way to learn PySpark if you already  know Pandas"
+        bookdetail    = "This book covers fundamental of PySpark and good coding practices when writting PySpark code. It has many hands on coding recipes and coding challenges to quickly get you up an running with PySpark."
+        imgurl = "images/products/pyspark.png"
+        buyurl    = "https://leanpub.com/pandas-to-pyspark"
+        sampleurl =  "https://leanpub.com/pandas-to-pyspark"
+        enable = true
+
+to disable a homepage product edit enable to false 
 
 
 
 paste this in the front matter of any post you wish to hide : draft: true
+
+to hide a product ,event :you can also det draft : true 
 
 
